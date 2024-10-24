@@ -13,5 +13,5 @@ RUN ./mvnw clean package -DskipTests
 # Etapa de ejecución
 FROM openjdk:17-jdk-alpine
 VOLUME /tmp
-COPY --from=build /app/target/your-app.jar app.jar
-ENTRYPOINT ["java","-jar","/plot-0.0.1-SNAPSHOT.jar"]
+COPY --from=build /app/target/plot-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
