@@ -1,5 +1,5 @@
 # Etapa de construcción
-FROM maven:3.8.8-openjdk-17-slim AS build
+FROM maven:amazoncorretto:17 AS build
 WORKDIR /app
 
 # Copiar el archivo pom.xml y descargar las dependencias
