@@ -1,5 +1,5 @@
 # Etapa de construcción
-FROM maven:amazoncorretto:17 AS build
+FROM maven:3.9.9-amazoncorretto-17-alpine AS build
 WORKDIR /app
 
 # Copiar el archivo pom.xml y descargar las dependencias
