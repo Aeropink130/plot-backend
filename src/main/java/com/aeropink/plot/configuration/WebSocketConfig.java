@@ -14,7 +14,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/createConnection").setAllowedOrigins("*")
-                .setAllowedOrigins("http://localhost:3000", "https://aeropink130.github.io")
+                .setAllowedOrigins("http://localhost:3000", "https://plot-frontend-sepia.vercel.app")
                 .setHandshakeHandler(new CustomHandshakeHandler()) // Añadir el handshake handler
                 .withSockJS();
     }
